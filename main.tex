@@ -1,0 +1,66 @@
+%--------------------
+% Packages
+% -------------------
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Use Times Font
+\usepackage{amsmath} % More math
+\usepackage{tabularx} % Better tables
+\usepackage[pdftex]{graphicx} % Required for including pictures
+\usepackage{polski} % Better polish translations (don't use babel!!)
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+\usepackage[table]{xcolor} % For colouring tables
+\usepackage{float} % To make tables work
+\usepackage{multirow} % Add multirow
+\usepackage{makecell} % Formatting in table cells
+
+\usepackage{diagbox} % Slash in table cells
+
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[a4paper, lmargin=0.1666\paperwidth, rmargin=0.1666\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} % Margins
+%\usepackage{parskip}
+
+\usepackage[all]{nowidow} % Tries to remove widows
+\usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+
+%-----------------------
+% Set pdf information and add title, fill in the fields
+%-----------------------
+\hypersetup{
+pdfsubject = {Sprawozdanie},
+pdftitle = {Sprawozdanie - TC},
+pdfauthor = {Maciej Obara, Mateusz Kwaśny}
+}
+
+%-----------------------
+% Change caption names
+%-----------------------
+\renewcommand{\figurename}{Rysunek}
+\renewcommand{\tablename}{Tabela}
+
+%-----------------------
+% Proper equasions numbering
+%-----------------------
+
+\numberwithin{equation}{section}
+
+%-----------------------
+% Define colours
+%-----------------------
+\definecolor{lightlightgray}{gray}{0.90}
+
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document}
+    \input{src/title-page.tex}
+
+\end{document}

@@ -1,0 +1,6 @@
+# Ignore all aux files
+*.log
+
+main.*
+!main.tex
+
